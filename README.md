@@ -97,6 +97,30 @@ cd codeql
 ./codeql database create -l python -s ../Python ../codeqldb
 ```
 
+### Analyze databases with the CodeQL CLI
+
+```shell
+./codeql database analyze ../codeqldb --format csv --output ../result.csv 
+```
+
+```shell
+Shutting down query evaluator.
+Interpreting results.
+Analysis produced the following diagnostic data:
+
+|                    Diagnostic                     |       Summary        |
++---------------------------------------------------+----------------------+
+| Python extraction warnings                        | 1 result (1 warning) |
+| Could not process some files due to syntax errors | 1 result (1 warning) |
+| Extracted Python files                            | 628 results          |
+
+Analysis produced the following metric data:
+
+|                         Metric                          | Value |
++---------------------------------------------------------+-------+
+| Total lines of user written Python code in the database | 31134 |
+```
+
 #### Clone target project
 
 ```shell
