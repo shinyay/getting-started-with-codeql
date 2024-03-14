@@ -86,7 +86,11 @@ Commands:
                         machine learning models and data extensions.
 ```
 
-### Create CodeQL Database
+### `database create`
+
+Create a CodeQL database for a source tree that can be analyzed using one of the CodeQL products.
+
+#### Clone target project
 
 ```shell
 git clone https://github.com/geekcomputers/Python.git 
@@ -97,13 +101,17 @@ cd codeql
 ./codeql database create -l python -s ../Python ../codeqldb
 ```
 
-### Analyze databases with the CodeQL CLI
+### `database analyze`
+
+Analyze a database, producing meaningful results in the context of the source code.
 
 ```shell
 ./codeql database analyze ../codeqldb --format csv --output ../result.csv 
 ```
 
 ```shell
+:
+:
 Shutting down query evaluator.
 Interpreting results.
 Analysis produced the following diagnostic data:
@@ -119,12 +127,6 @@ Analysis produced the following metric data:
 |                         Metric                          | Value |
 +---------------------------------------------------------+-------+
 | Total lines of user written Python code in the database | 31134 |
-```
-
-#### Clone target project
-
-```shell
-
 ```
 
 ## Installation
