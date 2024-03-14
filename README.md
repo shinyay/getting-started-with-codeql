@@ -57,6 +57,35 @@ Commands:
   diagnostic  [Experimental] Create, process, and export diagnostic information.
 ```
 
+#### `resolve`: [Deep plumbing] Helper commands to resolve disk locations etc.
+
+```shell
+./codeql resolve -h
+```
+
+```shell
+Usage: codeql resolve <command> <argument>...
+[Deep plumbing] Helper commands to resolve disk locations etc.
+Commands:
+  languages           List installed CodeQL extractor packs.
+  extractor           [Deep plumbing] Determine the extractor pack to use for a given language.
+  qlpacks             Create a list of installed QL packs and their locations.
+  queries             [Deep plumbing] Expand query directories and suite specifications.
+  library-path        [Deep plumbing] Determine QL library path and dbscheme for a query.
+  database            [Deep plumbing] Report metadata about the database.
+  upgrades            [Deep plumbing] Determine upgrades to run for a raw dataset.
+  qlref               [Deep plumbing] Dereferences a .qlref file to return a .ql one.
+  tests               [Deep plumbing] Find QL unit tests in given directories.
+  files               [Deep plumbing] Expand a set of file inclusion/exclusion globs.
+  ram                 [Deep plumbing] Prepare RAM options.
+  metadata            [Deep plumbing] Resolve and return the key-value metadata pairs from a query source file.
+  ml-models           [Deprecated] [Deep plumbing] Determine accessible machine learning models.
+  extensions          [Deep plumbing] Determine accessible extensions. This includes machine learning models and data
+                        extensions.
+  extensions-by-pack  [Deep plumbing] Determine accessible extensions for the given paths to pack roots. This includes
+                        machine learning models and data extensions.
+```
+
 ## Installation
 
 ## References
