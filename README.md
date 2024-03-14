@@ -86,6 +86,18 @@ Commands:
                         machine learning models and data extensions.
 ```
 
+### Create CodeQL Database
+
+```shell
+git clone https://github.com/geekcomputers/Python.git 
+```
+
+#### Clone target project
+
+```shell
+
+```
+
 ## Installation
 
 ## References
