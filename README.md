@@ -92,6 +92,11 @@ Commands:
 git clone https://github.com/geekcomputers/Python.git 
 ```
 
+```shell
+cd codeql
+./codeql database create -l python -s ../Python ../codeqldb
+```
+
 #### Clone target project
 
 ```shell
