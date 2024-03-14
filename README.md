@@ -18,7 +18,8 @@ Overview
 ### Download the CodeQL CLI zip package
 
 ```shell
-curl -LO https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.16.4/codeql-bundle-win64.tar.gz
+curl -LO https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.16.4/codeql-bundle-linux64.tar.gz
+tar xvf codeql-bundle-linux64.tar.gz
 ```
 
 ## Installation
