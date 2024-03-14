@@ -129,6 +129,14 @@ Analysis produced the following metric data:
 | Total lines of user written Python code in the database | 31134 |
 ```
 
+#### **SARIF** format
+
+- `--format sarif-latest`
+
+```shell
+./codeql database analyze ../codeqldb --format sarif-latest --output ../result.sarif 
+```
+
 ## Installation
 
 ## References
