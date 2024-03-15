@@ -1,5 +1,27 @@
 # Getting Started with CodeQL at local
 
+The CodeQL CLI (Command Line Interface) is a tool provided by GitHub that allows you to run CodeQL analysis and execute CodeQL queries from the command line on your local machine or in a CI/CD environment.
+
+Some key things to know about the CodeQL CLI:
+
+1. **Database Creation**: It allows you to create CodeQL databases from your source code. These databases contain data/control flow information and are required to run CodeQL queries.
+
+2. **Query Execution**: You can execute custom CodeQL query files or bundles of queries (query suites) against the created CodeQL databases using the CLI.
+
+3. **Integrate with Build Systems**: The CLI can integrate with various build systems like Make, MSBuild, Gradle etc. to automatically build CodeQL databases during code compilation.
+
+4. **Local Analysis**: Running analysis locally enables faster feedback cycles, offline usage, scaling to large codebases effectively using local compute resources.
+
+5. **Output Formats**: Query results can be output in various formats like CSV, SARIF, or print to console using CLI options.
+
+6. **CI/CD Integration**: The CLI facilitates integrating CodeQL analysis into your CI/CD pipelines and pre-commit hooks for consistent code checking.
+
+7. **Distributed Analysis**: For huge codebases, the analysis work can be distributed across multiple machines using the CLI.
+
+So in essence, the CodeQL CLI brings the powerfulCodeQL semantic code analysis capabilities to developers' local machines and automated workflows via a command line interface. It complements the CodeQL cloud service offering.
+
+## Description
+
 While [CodeQL](https://codeql.github.com/) as a cloud service has its own advantages, the local CLI offers more flexibility, control, and tight integration into developer workflows for efficient code analysis.
 
 - **Early Feedback in Development Workflow**
@@ -14,12 +36,10 @@ While [CodeQL](https://codeql.github.com/) as a cloud service has its own advant
   - With the CLI, you can create CodeQL databases and run queries locally without an internet connection after the initial setup, enabling use in air-gapped environments.
 - **Scaling to Large Codebases**
   - The CodeQL CLI can handle analyzing large, monolithic codebases efficiently on powerful local machines by leveraging multiple cores/threads and optimizing use of memory/disk.
-- **Compliance and Auditing*
+- **Compliance and Auditing**
   - For regulated industries, using an on-premise analysis tool like the CodeQL CLI can help meet compliance requirements around data privacy, control, and auditing better than a cloud service.
 - **Learning and Experimentation**
   - The local CLI provides a great environment for developers to learn CodeQL, experiment with new queries, inspect code properties, and build proficiency through hands-on practice.
-
-## Description
 
 ## Demo
 
