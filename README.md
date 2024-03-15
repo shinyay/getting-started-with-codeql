@@ -1,6 +1,23 @@
 # Getting Started with CodeQL at local
 
-Overview
+While [CodeQL](https://codeql.github.com/) as a cloud service has its own advantages, the local CLI offers more flexibility, control, and tight integration into developer workflows for efficient code analysis.
+
+- **Early Feedback in Development Workflow**
+  - Running CodeQL queries locally allows developers to get feedback on code quality and security issues early in their workflow, before pushing code changes. This enables fixing issues sooner rather than later.
+- **Customized Analysis**
+  - Using the CodeQL CLI locally gives you full control over the analysis. You can write and run custom queries tailored to your project's needs, coding standards, and security requirements that may not be covered by out-of-the-box queries.
+- **Faster Turnaround**
+  - Local analysis avoids the overhead of uploading source code and waiting for results from a remote service. The CodeQL CLI provides rapid query execution and iterative analysis capabilities.
+- ** Pre-Commit Checks**
+  - The local CLI enables integrating CodeQL analysis seamlessly into pre-commit hooks or CI pipelines for consistent code checking before commits/merges.
+- **Offline Usage**
+  - With the CLI, you can create CodeQL databases and run queries locally without an internet connection after the initial setup, enabling use in air-gapped environments.
+- **Scaling to Large Codebases**
+  - The CodeQL CLI can handle analyzing large, monolithic codebases efficiently on powerful local machines by leveraging multiple cores/threads and optimizing use of memory/disk.
+- **Compliance and Auditing*
+  - For regulated industries, using an on-premise analysis tool like the CodeQL CLI can help meet compliance requirements around data privacy, control, and auditing better than a cloud service.
+- **Learning and Experimentation**
+  - The local CLI provides a great environment for developers to learn CodeQL, experiment with new queries, inspect code properties, and build proficiency through hands-on practice.
 
 ## Description
 
